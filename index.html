@@ -194,8 +194,15 @@
             currentIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
             updateCarrusel();
         });
-
         
+        // JavaScript para el funcionamiento del menú desplegable móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            // Alternar la visibilidad del menú
+            mobileMenu.classList.toggle('hidden');
+        });        
     </script>
 </body>
 </html>
