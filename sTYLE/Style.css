@@ -1,66 +1,42 @@
+/* Estilos personalizados */
 body {
-    font-family: Arial, sans-serif;
     background-color: #ede9d6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 header {
     background-color: #ede9d6;
-        }
-
-.login-container {
-    background-color: #fff;
-    padding: 40px;
-    
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.input-group {
-    margin-bottom: 13px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#error-message {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
 }
 
 footer {
     background-color: #000000;
-        }
+}
+
+
+.text-white:hover {
+    color: #d1d5db; /* Color gris claro para hover */
+}
+
+button:focus {
+    outline: none; /* Quitar outline de botones al hacer clic */
+}
+
+#menu-btn {
+    cursor: pointer;
+}
+
+/* Ajuste para el menú desplegable en móviles */
+#mobile-menu {
+    border-top: 1px solid #e5e7eb; /* Color de borde */
+}
+
+/* Iconos de redes sociales */
+footer .fab, 
+footer .fas {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+footer .fab:hover, 
+footer .fas:hover {
+    color: #d1d5db; /* Cambiar color a gris claro al pasar el mouse */
+}
