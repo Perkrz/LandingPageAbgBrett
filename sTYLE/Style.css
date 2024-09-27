@@ -1,12 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #ede9d6;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
+header {
+    background-color: #ede9d6;
+        }
 
 .login-container {
     background-color: #fff;
@@ -56,3 +60,7 @@ button:hover {
     margin-top: 10px;
     text-align: center;
 }
+
+footer {
+    background-color: #000000;
+        }
