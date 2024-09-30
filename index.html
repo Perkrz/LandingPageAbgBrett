@@ -41,53 +41,182 @@
     </header>
     
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(Media/12foto.jpg);">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-            <!-- Imagen Izquierda -->
-            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+<!-- Hero Section centrado -->
+<section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(Media/12foto.jpg);">
+    <div class="container mx-auto flex flex-col items-center justify-center px-6">
+        <!-- Imagen Izquierda -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+            
+        </div>
+        <!-- Texto y Botones Centrados -->
+        <div class="w-full md:w-1/2 text-center text-black">
+            <h1 class="text-4xl font-bold">Abogado Brett: Mentorías</h1>
+            <p class="mt-4 text-xl">Con nuestras mentorías de 6 horas, te guiaremos paso a paso.</p>
+            <!-- Botones centrados justo debajo del párrafo -->
+            <div class="flex flex-wrap gap-2 mt-4 justify-center">
+                <a href="#beneficios" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Beneficios</a>
+                <a href="#esto-es-para-ti" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">¿Esto es para ti?</a>
+                <a href="#empieza" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Empieza</a>
             </div>
-            <!-- Texto a la Derecha -->
-            <div class="w-full md:w-1/2 text-center md:text-left text-black">
-                <h1 class="text-4xl font-bold text-center">Abogado Brett: Mentorías</h1>
-                <p class="mt-4 text-xl text-center">Con nuestras mentorías de 6 horas, te guiaremos paso a paso.</p>
-                <!-- Botones en una línea justo debajo del párrafo -->
-                <div class="flex flex-wrap gap-2 mt-2 justify-center md:justify-start items-end">
-                    <a href="#beneficios" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Beneficios</a>
-                    <a href="#esto-es-para-ti" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">¿Esto es para ti?</a>
-                    <a href="#empieza" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Empieza</a>
-                </div>
-                <!-- Botón grande en la siguiente línea -->
-                <div class="mt-4 w-full flex justify-center md:justify-start">
-                    <a href="#contacto" class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full md:w-auto md:px-28">
-                        Agenda tu sesión
-                    </a>
-                </div>
+            <!-- Botón grande centrado en la siguiente línea -->
+            <div class="mt-4 w-full flex justify-center">
+                <a href="#contacto" class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full md:w-auto md:px-28">
+                    Agenda tu sesión
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de Beneficios de la Ciudadanía Italiana -->
+    <section id="beneficios" class="py-16 " style="background-color:#082f49;">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Beneficios de la Ciudadanía Italiana</h2>
+            <p class="text-lg mb-8 text-white">Obtener la ciudadanía italiana ofrece una gran cantidad de ventajas para ti y tu familia.<br>Aquí te presentamos algunos de los beneficios clave de este servicio de mentoría:</p>
+            
+            <!-- Lista de Beneficios dividida en dos bloques -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Bloque 1 -->
+                <ul class="text-left">
+                    <li class="flex items-center mb-4">
+                       
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white">Evaluación Sin Compromiso: Contrata una consulta de 30 minutos y, si continúas, te la abonamos al paquete de 6 horas. ¡Es como si fuera gratis!</span>
+                    </li>
+                    <li class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white ">Asesoria Personalizada: 6 horas de consulta a lo largo de 12 meses, adaptadas a tu ritmo.</span>
+                    </li>
+                    <li class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white">Ahorro Económico: Ahorras hasta $300 comparado con consultas individuales. ¡Una inversión inteligente!</span>
+                    </li>
+                </ul>
+                <!-- Bloque 2 -->
+                <ul class="text-left">
+                    <li class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white">Respaldo Especializado: Un equipo profesional te acompaña, evitando errores y asegurando tu avance.</span>
+                    </li>
+                    <li class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white">Extensión de Servicio: Si necesitas más horas, tu paquete se amplía fácilmente.</span>
+                    </li>
+                    <li class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-red-600 fa-lg mr-3"></i>
+                        <span class="text-lg text-white">Flexibilidad Total: Agenda cuando quieras durante el año, sin horarios fijos.</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     
-
-    <!-- Descripción de la Mentoría -->
-    <section id="mentoria" class="py-16 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">¿Qué incluye la mentoría?</h2>
-            <p class="text-lg mb-8">En estas 6 horas, recibirás toda la orientación necesaria para obtener tu ciudadanía italiana, desde la recopilación de documentos hasta la presentación de la solicitud.</p>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <li class="bg-gray-100 p-6 rounded shadow">
-                    <h3 class="text-xl font-bold">Análisis de Documentación</h3>
-                    <p class="mt-2">Revisamos todos los documentos necesarios y te indicamos cómo obtener los que falten.</p>
-                </li>
-                <li class="bg-gray-100 p-6 rounded shadow">
-                    <h3 class="text-xl font-bold">Asesoramiento Personalizado</h3>
-                    <p class="mt-2">Te guiamos en cada paso del proceso para asegurar que cumplas con todos los requisitos.</p>
-                </li>
-                <li class="bg-gray-100 p-6 rounded shadow">
-                    <h3 class="text-xl font-bold">Soporte Continuo</h3>
-                    <p class="mt-2">Acompañamiento hasta que presentes tu solicitud en el consulado italiano correspondiente.</p>
-                </li>
-            </ul>
+    <section id="servicio-mentorías" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg text-center">
+            <h2 class="text-3xl font-bold mb-8">¿Es este Servicio de Mentorías para Ti?</h2>
+            <p class="text-lg mb-8">
+                Nuestro servicio de mentorías está diseñado especialmente para quienes desean obtener su ciudadanía italiana y necesitan una guía clara, profesional y personalizada durante todo el proceso. A continuación, te explicamos quiénes pueden beneficiarse de nuestras mentorías y cuáles son los requisitos generales para acceder a la ciudadanía italiana, tanto por descendencia como por matrimonio.
+            </p>
+    
+            <!-- Opciones principales en una línea -->
+            <div id="options-container" class="flex flex-col md:flex-row justify-center gap-6">
+                <!-- Opción 1: Descendientes de Italianos -->
+                <div id="descendientes" class="bg-gray-100 p-6 rounded shadow cursor-pointer w-full md:w-1/3" onclick="mostrarDetalle('descendientes')">
+                    <h3 class="text-xl font-bold">Descendientes de Italianos</h3>
+                    <p class="mt-2">Hijos y Nietos de Italianos</p>
+                </div>
+                <!-- Opción 2: Esposos y Esposas de Italianos -->
+                <div id="esposos" class="bg-gray-100 p-6 rounded shadow cursor-pointer w-full md:w-1/3" onclick="mostrarDetalle('esposos')">
+                    <h3 class="text-xl font-bold">Esposos y Esposas de Italianos</h3>
+                    <p class="mt-2">Ciudadanía por Matrimonio</p>
+                </div>
+                <!-- Opción 3: Italianos Nacidos en el Exterior -->
+                <div id="italianos" class="bg-gray-100 p-6 rounded shadow cursor-pointer w-full md:w-1/3" onclick="mostrarDetalle('italianos')">
+                    <h3 class="text-xl font-bold">Italianos Nacidos en el Exterior</h3>
+                    <p class="mt-2">Ya Reconocidos</p>
+                </div>
+            </div>
+    
+            <!-- Detalles de cada opción (inicialmente ocultos) -->
+            <div id="detalle-descendientes" class="hidden mt-8">
+                <h3 class="text-2xl font-bold mb-4">Descendientes de Italianos: Hijos y Nietos de Italianos</h3>
+                <!-- Contenido dividido en 2 bloques -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <p>
+                        Si eres hijo o nieto de un italiano y deseas investigar y verificar la elegibilidad de tu línea familiar, este servicio es perfecto para ti. Te ayudamos a explorar tu árbol genealógico, identificar los documentos necesarios y guiarte en cada paso hasta obtener tu ciudadanía.
+                    </p>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Requisitos Generales para Ciudadanía por Descendencia (Jure Sanguinis):</h4>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Debes probar que tienes un antepasado italiano que no renunció a su ciudadanía italiana antes de que nacieran sus descendientes directos.</li>
+                            <li>Se requiere una línea ininterrumpida de documentos que demuestren la nacionalidad italiana del antepasado y los enlaces familiares hasta llegar a ti.</li>
+                            <li>Documentación básica incluye: actas de nacimiento, matrimonio y defunción de cada miembro de la línea de descendencia, legalizadas y apostilladas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="volver()">Volver</button>
+            </div>
+    
+            <div id="detalle-esposos" class="hidden mt-8">
+                <h3 class="text-2xl font-bold mb-4">Esposos y Esposas de Italianos</h3>
+                <!-- Contenido dividido en 2 bloques -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <p>
+                        Si estás casado con un ciudadano italiano, puedes obtener la ciudadanía por matrimonio. Nuestras mentorías te ofrecen el apoyo necesario para reunir los requisitos, presentar los documentos y avanzar con seguridad en este proceso.
+                    </p>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Requisitos Generales para Ciudadanía por Matrimonio:</h4>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Debes estar casado con un ciudadano italiano.</li>
+                            <li>Debes haber estado casado por al menos 2 años (si resides en Italia) o 3 años (si resides fuera de Italia), con reducción a la mitad si tienes hijos en común.</li>
+                            <li>No debes tener antecedentes penales significativos y cumplir con ciertos requisitos lingüísticos, demostrando al menos un nivel B1 en italiano.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="volver()">Volver</button>
+            </div>
+    
+            <div id="detalle-italianos" class="hidden mt-8">
+                <h3 class="text-2xl font-bold mb-4">Italianos Nacidos en el Exterior ya Reconocidos</h3>
+                <!-- Contenido dividido en 2 bloques -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <p>
+                        Este servicio también es ideal para italianos que nacieron en el extranjero, ya tienen su ciudadanía y pasaporte italiano, pero buscan explorar más oportunidades legales, verificar documentación adicional, o simplemente necesitan orientación para mantener su estatus actualizado.
+                    </p>
+                    <div>
+                        <!-- Puedes añadir más contenido o dejarlo vacío si lo prefieres -->
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="volver()">Volver</button>
+            </div>
         </div>
     </section>
+
+    <!-- Sección de Mentorías centrada y mobile-friendly -->
+<section id="mentoria" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">¿Qué incluye la mentoría?</h2>
+        <p class="text-lg text-center mb-8">
+            En estas 6 horas, recibirás toda la orientación necesaria para obtener tu ciudadanía italiana, desde la recopilación de documentos hasta la presentación de la solicitud.
+        </p>
+        
+        <!-- Lista de servicios/mentoría -->
+        <div class="flex flex-col md:flex-row justify-center md:space-x-6 space-y-6 md:space-y-0">
+            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                <h3 class="text-xl font-bold">Análisis de Documentación</h3>
+                <p class="mt-2">Revisamos todos los documentos necesarios y te indicamos cómo obtener los que falten.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                <h3 class="text-xl font-bold">Asesoramiento Personalizado</h3>
+                <p class="mt-2">Te guiamos en cada paso del proceso para asegurar que cumplas con todos los requisitos.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                <h3 class="text-xl font-bold">Soporte Continuo</h3>
+                <p class="mt-2">Acompañamiento hasta que presentes tu solicitud en el consulado italiano correspondiente.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Testimonios - Carrusel -->
     <section id="testimonios" class="py-16 bg-gray-50">
@@ -193,39 +322,7 @@
         </div>
     </footer>
     
-    <script>
-        // JavaScript para el funcionamiento del carrusel
-        const carrusel = document.getElementById('testimoniosCarrusel');
-        const testimonios = document.querySelectorAll('#testimoniosCarrusel > div');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-
-        let currentIndex = 0;
-
-        function updateCarrusel() {
-            const offset = -currentIndex * 100; // Ajusta la posición basado en el índice actual
-            carrusel.style.transform = `translateX(${offset}%)`;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonios.length - 1;
-            updateCarrusel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
-            updateCarrusel();
-        });
-        
-        // JavaScript para el funcionamiento del menú desplegable móvil
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            // Alternar la visibilidad del menú
-            mobileMenu.classList.toggle('hidden');
-        });        
-    </script>
+    <script src="Javascript/index.js"></script>
 </body>
 </html>
 
