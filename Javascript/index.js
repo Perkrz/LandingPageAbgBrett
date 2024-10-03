@@ -1,26 +1,3 @@
-// JavaScript para el funcionamiento del carrusel
-const carrusel = document.getElementById('testimoniosCarrusel');
-const testimonios = document.querySelectorAll('#testimoniosCarrusel > div');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-let currentIndex = 0;
-
-function updateCarrusel() {
-    const offset = -currentIndex * 100; // Ajusta la posición basado en el índice actual
-    carrusel.style.transform = `translateX(${offset}%)`;
-}
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonios.length - 1;
-    updateCarrusel();
-});
-
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex < testimonios.length - 1) ? currentIndex + 1 : 0;
-    updateCarrusel();
-});
-
 // JavaScript para el funcionamiento del menú desplegable móvil
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');

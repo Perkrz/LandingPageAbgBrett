@@ -11,37 +11,74 @@
 </head>
 </head>
 <body class="bg-orange-200 text-gray-900">
-    <!-- Header Sticky Solo en Dispositivos Grandes -->
-    <header class="shadow md:sticky md:top-0 md:z-50 relative">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
-            <!-- Texto Enmarcado en un Cuadrado Rojo y desplazado a la derecha -->
-            <div class="absolute top-0 left-12 h-full flex items-center bg-red-600 text-white px-4 py-4 rounded shadow">
-                ABOGADO BRETT
-            </div>
-            <!-- Botón de Menú Hamburger -->
-            <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none ml-auto">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
-            <!-- Navegación Desktop -->
-            <nav id="menu" class="hidden md:flex space-x-4 ml-auto">
-                <a href="#mentoria" class="text-gray-600 hover:text-blue-600">Mentoría</a>
-                <a href="#testimonios" class="text-gray-600 hover:text-blue-600">Testimonios</a>
-                <a href="#contacto" class="text-gray-600 hover:text-blue-600">Contacto</a>
-            </nav>
+   <!-- Header Sticky Solo en Dispositivos Grandes con Íconos y Blog -->
+<header class="shadow md:sticky md:top-0 md:z-50 relative">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+        <!-- Texto Enmarcado en un Cuadrado Rojo y desplazado a la derecha -->
+        <div class="absolute top-0 left-12 h-full flex items-center bg-red-600 text-white px-4 py-4 rounded shadow" href="abogadobrett.com">
+            ABOGADO BRETT
         </div>
-        <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
-            <nav class="flex flex-col px-6 py-4 space-y-2">
-                <a href="#mentoria" class="text-gray-600 hover:text-blue-600">Mentoría</a>
-                <a href="#testimonios" class="text-gray-600 hover:text-blue-600">Testimonios</a>
-                <a href="#contacto" class="text-gray-600 hover:text-blue-600">Contacto</a>
-            </nav>
-        </div>
-    </header>
+        <!-- Botón de Menú Hamburger para móviles -->
+        <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none ml-auto">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <!-- Navegación con Íconos en pantallas grandes -->
+        <nav id="menu" class="hidden md:flex space-x-4 ml-auto">
+            <!-- Enlace Blog en pantallas grandes -->
+            <a href="https://www.abogadobrett.com/blog/" target="_blank" class="text-gray-600 hover:text-blue-600" aria-label="Blog">
+                Blog
+            </a>
+            <!-- Íconos de redes sociales -->
+            <a href="https://wa.me/584146412391?text=Hola%20Abogado%20Brett.%20Estoy%20interesado%20en%20contratar%20sus%20servicios%2C%20mi%20nombre%20es" target="_blank" class="text-gray-600 hover:text-blue-600" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/Abogadobrett" target="_blank" class="text-gray-600 hover:text-blue-600" aria-label="Instagram">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/AbogadoBrett/" target="_blank" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/Abogadobrett" target="_blank" class="text-gray-600 hover:text-blue-600" aria-label="YouTube">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+        </nav>
+    </div>
     
+    <!-- Menú Desplegable Móvil con nombres e íconos a la derecha -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+        <nav class="flex flex-col px-6 py-4 space-y-2">
+            <!-- Enlace Blog en el menú móvil -->
+            <a href="https://www.abogadobrett.com/blog/" target="_blank" class="flex justify-between items-center text-gray-600 hover:text-blue-600" aria-label="Blog">
+                <span>Blog</span>
+            </a>
+            <!-- Redes sociales -->
+            <a href="https://wa.me/584146412391?text=Hola%20Abogado%20Brett.%20Estoy%20interesado%20en%20contratar%20sus%20servicios%2C%20mi%20nombre%20es" target="_blank" class="flex justify-between items-center text-gray-600 hover:text-blue-600" aria-label="WhatsApp">
+                <span>WhatsApp</span>
+                <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/Abogadobrett" target="_blank" class="flex justify-between items-center text-gray-600 hover:text-blue-600" aria-label="Instagram">
+                <span>Instagram</span>
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/AbogadoBrett/" target="_blank" class="flex justify-between items-center text-gray-600 hover:text-blue-600" aria-label="Facebook">
+                <span>Facebook</span>
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/Abogadobrett" target="_blank" class="flex justify-between items-center text-gray-600 hover:text-blue-600" aria-label="YouTube">
+                <span>YouTube</span>
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+        </nav>
+    </div>
+</header>
+    
+<!-- Imagen de WhatsApp fija en la esquina inferior derecha -->
+<a href="https://wa.me/584146412391?text=Hola%20Abogado%20Brett.%20Estoy%20interesado%20en%20contratar%20sus%20servicios%2C%20mi%20nombre%20es" target="_blank" class="whatsapp-fixed">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
     <!-- Hero Section -->
     <!-- Hero Section con contenido a la izquierda y centrado verticalmente -->
-<section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(Media/12foto.jpg);">
+<section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(Media/Foto\ Johan\ modificada.jpg);">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         <!-- Imagen Izquierda -->
         <div class="w-full md:w-1/2 mb-8 md:mb-0">
@@ -54,12 +91,12 @@
             <!-- Botones alineados a la izquierda -->
             <div class="flex flex-wrap gap-2 mt-4 justify-center text-center">
                 <a href="#beneficios" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Beneficios</a>
-                <a href="#esto-es-para-ti" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">¿Esto es para ti?</a>
-                <a href="#empieza" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Empieza</a>
+                <a href="#servicio-mentorías" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">¿Esto es para ti?</a>
+                <a href="#testimonios" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Testimonios</a>
             </div>
             <!-- Botón grande alineado a la izquierda -->
             <div class="mt-4 w-full flex justify-center text-center">
-                <a href="#contacto" class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full md:w-auto md:px-28">
+                <a href="#call-to-action" class="inline-block bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 w-full md:w-auto md:px-28">
                     Agenda tu sesión
                 </a>
             </div>
@@ -68,9 +105,9 @@
 </section>
 
         <!-- Sección de Beneficios de la Ciudadanía Italiana -->
-    <section id="beneficios" class="py-16 " style="background-color:#082f49;">
+        <section id="beneficios" class="py-16 "style="background-color:#082f49;">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6 text-white">Beneficios de la Ciudadanía Italiana</h2>
+            <h2 class="text-3xl font-bold mb-6 text-white">Beneficios de la Mentoría</h2>
             <p class="text-lg mb-8 text-white">Obtener la ciudadanía italiana ofrece una gran cantidad de ventajas para ti y tu familia.<br>Aquí te presentamos algunos de los beneficios clave de este servicio de mentoría:</p>
             
             <!-- Lista de Beneficios dividida en dos bloques -->
@@ -110,7 +147,7 @@
         </div>
     </section>
     
-    <section id="servicio-mentorías" class="py-16 bg-white">
+    <section id="servicio-mentorías" class="py-16" style="background-color:#ede9d6 ;">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg text-center">
             <h2 class="text-3xl font-bold mb-8">¿Es este Servicio de Mentorías para Ti?</h2>
             <p class="text-lg mb-8">
@@ -138,11 +175,11 @@
     
             <!-- Detalles de cada opción (inicialmente ocultos) -->
             <div id="detalle-descendientes" class="hidden mt-8">
-                <h3 class="text-2xl font-bold mb-4">Descendientes de Italianos: Hijos y Nietos de Italianos</h3>
+                <!--h3 class="text-2xl font-bold mb-4">Descendientes de Italianos: Hijos y Nietos de Italianos</h3-->
                 <!-- Contenido dividido en 2 bloques -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                    <p>
-                        Si eres hijo o nieto de un italiano y deseas investigar y verificar la elegibilidad de tu línea familiar, este servicio es perfecto para ti. Te ayudamos a explorar tu árbol genealógico, identificar los documentos necesarios y guiarte en cada paso hasta obtener tu ciudadanía.
+                    <h3 class="text-2xl font-bold mb-4">Descendientes de Italianos: Hijos y Nietos de Italianos</h3>
+                    <p> Si eres hijo o nieto de un italiano y deseas investigar y verificar la elegibilidad de tu línea familiar, este servicio es perfecto para ti. Te ayudamos a explorar tu árbol genealógico, identificar los documentos necesarios y guiarte en cada paso hasta obtener tu ciudadanía.
                     </p>
                     <div>
                         <h4 class="text-xl font-bold mb-2">Requisitos Generales para Ciudadanía por Descendencia (Jure Sanguinis):</h4>
@@ -192,129 +229,88 @@
     </section>
 
     <!-- Sección de Mentorías centrada y mobile-friendly -->
-<section id="mentoria" class="py-16" style="background-color:#082f49;">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-4 text-white">¿Qué incluye la mentoría?</h2>
-        <p class="text-lg text-center mb-8 text-white">
-            En estas 6 horas, recibirás toda la orientación necesaria para obtener tu ciudadanía italiana,<br>desde la recopilación de documentos hasta la presentación de la solicitud.
-        </p>
+<!--section id="mentoria" class="py-16" style="background-color:#082f49;"-->
+    <!-- Sección de Mentorías más grande -->
+    <section id="mentoria" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">¿Qué incluye la mentoría?</h2>
+            <p class="text-lg mb-8">
+                En estas 6 horas, recibirás toda la orientación necesaria para obtener tu ciudadanía italiana, desde la recopilación de documentos hasta la presentación de la solicitud.
+            </p>
+            
+            <!-- Lista de servicios/mentoría centrada -->
+            <div class="flex flex-col md:flex-row justify-center md:space-x-6 space-y-6 md:space-y-0">
+                <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                    <h3 class="text-xl font-bold">Análisis de Documentación</h3>
+                    <p class="mt-2">Revisamos todos los documentos necesarios y te indicamos cómo obtener los que falten.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                    <h3 class="text-xl font-bold">Asesoramiento Personalizado</h3>
+                    <p class="mt-2">Te guiamos en cada paso del proceso para asegurar que cumplas con todos los requisitos.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto">
+                    <h3 class="text-xl font-bold">Soporte Continuo</h3>
+                    <p class="mt-2">Acompañamiento hasta que presentes tu solicitud en el consulado italiano correspondiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios con Video y Explicación -->
+<section id="testimonios" class="py-16 " style="background-color: #ede9d6;">
+    <div class="container mx-auto px-6 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-8 text-center">Testimonios</h2>
         
-        <!-- Lista de servicios/mentoría -->
-        <div class="flex flex-col md:flex-row justify-center md:space-x-6 space-y-6 md:space-y-0">
-            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto" style="background-color:#2563eb;">
-                <h3 class="text-xl font-bold text-white">Análisis de Documentación</h3>
-                <p class="mt-2 text-white ">Revisamos todos los documentos necesarios y te indicamos cómo obtener los que falten.</p>
+        <!-- Contenedor con dos bloques: video y explicación -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Bloque de Video a la Izquierda -->
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <!-- Insertar aquí tu video -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J8OlLEdlO0w?si=pp5Tkd4GGpN1zXqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto" style="background-color:#2563eb;">
-                <h3 class="text-xl font-bold text-white">Asesoramiento Personalizado</h3>
-                <p class="mt-2 text-white">Te guiamos en cada paso del proceso para asegurar que cumplas con todos los requisitos.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded shadow text-center w-full md:w-1/3 mx-auto"style="background-color:#2563eb;" >
-                <h3 class="text-xl font-bold text-white">Soporte Continuo</h3>
-                <p class="mt-2 text-white">Acompañamiento hasta que presentes tu solicitud en el consulado italiano correspondiente.</p>
+            
+            <!-- Bloque de Texto a la Derecha -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Comentarios Positivos de Nuestros Clientes</h3>
+                <p class="text-lg">
+                    Nos enorgullece la satisfacción de nuestros clientes. En este video podrás ver los comentarios de quienes han logrado obtener su ciudadanía italiana gracias a nuestras mentorías. Con un enfoque personalizado y profesional, hemos ayudado a muchos a cumplir sus sueños y recibir su ciudadanía italiana. Nuestro éxito se mide a través de la satisfacción de nuestros clientes, y estamos comprometidos a seguir ofreciendo el mejor servicio posible.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Testimonios - Carrusel -->
-    <section id="testimonios" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Testimonios</h2>
-            <div class="relative overflow-hidden">
-                <div id="testimoniosCarrusel" class="flex transition-transform duration-500 ease-out">
-                    <div class="min-w-full md:min-w-1/2 lg:min-w-1/2 p-6 bg-white rounded shadow flex flex-col items-center">
-                        <img src="https://source.unsplash.com/random/300x200?cat" alt="Gatito" class="rounded-full mb-4 w-24 h-24 md:w-32 md:h-32">
-                        <p class="text-lg">"Gracias a estas mentorías, logré obtener mi ciudadanía en tiempo récord. El proceso fue claro y sencillo."</p>
-                        <p class="mt-4 text-gray-600">- Juan Pérez</p>
-                    </div>
-                    <div class="min-w-full md:min-w-1/2 lg:min-w-1/2 p-6 bg-white rounded shadow flex flex-col items-center">
-                        <img src="https://source.unsplash.com/random/300x200?cat" alt="Gatito" class="rounded-full mb-4 w-24 h-24 md:w-32 md:h-32">
-                        <p class="text-lg">"El apoyo y la orientación que recibí fueron invaluables. No lo hubiera logrado sin esta ayuda."</p>
-                        <p class="mt-4 text-gray-600">- María González</p>
-                    </div>
-                    <div class="min-w-full md:min-w-1/2 lg:min-w-1/2 p-6 bg-white rounded shadow flex flex-col items-center">
-                        <img src="https://source.unsplash.com/random/300x200?cat" alt="Gatito" class="rounded-full mb-4 w-24 h-24 md:w-32 md:h-32">
-                        <p class="text-lg">"La mentoría fue excelente, me dieron todos los pasos y me acompañaron durante todo el proceso."</p>
-                        <p class="mt-4 text-gray-600">- Luis García</p>
-                    </div>
-                    <!-- Más testimonios se pueden añadir aquí -->
-                </div>
-                <!-- Controles -->
-                <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 focus:outline-none">
-                    &lt;
-                </button>
-                <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 focus:outline-none">
-                    &gt;
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulario de Contacto -->
-    <section id="contacto" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
-            <form class="max-w-lg mx-auto bg-gray-100 p-8 rounded shadow">
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
-                    <input class="w-full px-3 py-2 border rounded" type="text" id="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo Electrónico</label>
-                    <input class="w-full px-3 py-2 border rounded" type="email" id="email" placeholder="Tu correo" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Número de Teléfono</label>
-                    <div class="flex">
-                        <select class="border rounded-l px-3 py-2 bg-white" id="codigoPais">
-                            <option value="+1">+1 (EE.UU.)</option>
-                            <option value="+34">+34 (España)</option>
-                            <option value="+39">+39 (Italia)</option>
-                            <!-- Añadir más opciones de códigos de país según sea necesario -->
-                        </select>
-                        <input class="w-full px-3 py-2 border rounded-r" type="tel" id="telefono" placeholder="123456789" required>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="paisResidencia">País de Residencia</label>
-                    <select class="w-full px-3 py-2 border rounded bg-white" id="paisResidencia" required>
-                        <option value="España">España</option>
-                        <option value="Italia">Italia</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="México">México</option>
-                        <option value="Estados Unidos">Estados Unidos</option>
-                        <!-- Añadir más países según sea necesario -->
-                    </select>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="servicio">Servicio Preferido</label>
-                    <select class="w-full px-3 py-2 border rounded bg-white" id="servicio" required>
-                        <option value="ciudadania">Ciudadanía Italiana</option>
-                        <option value="gestoria">Gestoría de Documentos</option>
-                        <option value="mentorias">Mentorías</option>
-                    </select>
-                </div>
-                <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+   <!-- Sección Call-to-Action con imagen de fondo, altura completa, y texto centrado -->
+<section id="call-to-action" class="h-screen bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('Media/CI.\ POR\ DESCENDENCIA-3.png');">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold mb-4">Agenda tu Mentoría Hoy</h2>
+        <p class="text-lg mb-8">
+            Elige el día y la hora que mejor te convenga para comenzar tu proceso de mentoría, y descubre nuestras opciones de pago.<br>¡Estamos listos para ayudarte a obtener tu ciudadanía italiana!
+        </p>
+        <!-- Botón Call-to-Action enlazado a Calendly -->
+        <a href="https://calendly.com/tu-enlace-de-calendly" target="_blank" class="inline-block bg-blue-600 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition">
+            Reserva tu Sesión
+        </a>
+    </div>
+</section>
 
     <!-- Footer -->
      <footer class="py-6">
         <div class="container mx-auto px-6 text-center text-white">
             <p>&copy; 2024 Mi Ciudadanía Italiana. Todos los derechos reservados.</p>
             <div class="mt-4 flex justify-center space-x-4">
-                <a href="https://www.instagram.com/tu_perfil" class="text-white hover:text-gray-400" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/abogadobrett" class="text-white hover:text-gray-400" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram fa-lg"></i>
                 </a>
-                <a href="mailto:correo@ejemplo.com" class="text-white hover:text-gray-400" aria-label="Correo Electrónico">
+                <a href="mailto:abogadobrett@gmail.com" class="text-white hover:text-gray-400" aria-label="Correo Electrónico">
                     <i class="fas fa-envelope fa-lg"></i>
                 </a>
-                <a href="https://www.youtube.com/tu_canal" class="text-white hover:text-gray-400" target="_blank" aria-label="YouTube">
+                <a href="https://www.youtube.com/Abogadobrett" class="text-white hover:text-gray-400" target="_blank" aria-label="YouTube">
                     <i class="fab fa-youtube fa-lg"></i>
                 </a>
-                <a href="https://wa.me/1234567890" class="text-white hover:text-gray-400" target="_blank" aria-label="WhatsApp">
+                <a href="https://wa.me/584146412391?text=Hola%20Abogado%20Brett.%20Estoy%20interesado%20en%20contratar%20sus%20servicios%2C%20mi%20nombre%20es" class="text-white hover:text-gray-400" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp fa-lg"></i>
                 </a>
             </div>
