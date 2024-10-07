@@ -1,10 +1,19 @@
 /* Estilos personalizados */
 body {
     background-color: #ede9d6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
     background-color: #ede9d6;
+}
+
+.Font-mentorias{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer {
@@ -24,20 +33,43 @@ button:focus {
     cursor: pointer;
 }
 
-/* Ajustar el video para que mantenga la proporción cuadrada */
+/* Estilos del marco para el video */
+.video-container {
+    background-color: #000000;
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 35%;
+    padding-left: 65%;
+    padding-top: 0%;
+    padding-right: 0%; /* Proporción cuadrada (1:1) */
+    border: 5px solid #ddd; /* Color del marco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
+    margin: 0 auto; /* Centrado en pantallas pequeñas */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Para ajustar al marco redondeado */
+}
+
+/* Ajustar el video para que mantenga la proporción cuadrada 
 .video-container {
     position: relative;
     width: 100%;
     padding-bottom: 50%;
     padding-left: 20%;
     padding-top: 0%;
-    padding-right: 0%; /* Proporción cuadrada (1:1) */
+    padding-right: 0%; /* Proporción cuadrada (1:1) 
     height: 0;
     overflow: hidden;
-    max-width: 500px; /* Tamaño máximo del video en pantallas pequeñas */
-    margin: 0 auto; /* Centramos el contenedor del video */
+    max-width: 500px; /* Tamaño máximo del video en pantallas pequeñas 
+    margin: 0 auto; /* Centramos el contenedor del video
 }
-
 .video-container iframe {
     position: absolute;
     top: 0;
@@ -93,7 +125,7 @@ button:focus {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Añade una sombra para mayor visibilidad */
     transition: transform 0.3s;  /* Efecto de transición para la animación */
 }
-
+  
 .whatsapp-icon:hover {
     transform: scale(1.1);  /* Aumenta el tamaño al pasar el cursor */
 }
