@@ -1,7 +1,8 @@
 /* Estilos personalizados */
 body {
     background-color: #ede9d6;
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -36,10 +37,10 @@ button:focus {
 /* Estilos del marco para el video */
 .video-container {
     background-color: #000000;
-    position: relative;
+    position: relative; 
     max-width: 100%;
-    padding-bottom: 35%;
-    padding-left: 65%;
+    padding-bottom: 40%;
+    padding-left: 70%;
     padding-top: 0%;
     padding-right: 0%; /* Proporción cuadrada (1:1) */
     border: 5px solid #ddd; /* Color del marco */
